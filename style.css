@@ -16,11 +16,12 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding: 48px;
+  padding: 38px;
 
   position: fixed;
   width: 100%;
   background-color: #09090A;
+  
 }
 
 button  {
@@ -38,11 +39,6 @@ button  {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
-}
-
-/* Adicione este código ao seu CSS existente */
-.results {
-  margin-bottom: 80px; /* Adicione o espaçamento inferior desejado, por exemplo, 80px */
 }
 
 

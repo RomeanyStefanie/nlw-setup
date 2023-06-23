@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habits</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habits</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header> 
+    <img src="./assets/logo.svg" alt="logomarca do aplicativo Habits" />
 
-    <link rel="stylesheet" href="./style.css">
+    <button>
+      <img src="./assets/Plus.svg" alt="icone Plus">
+      <div>Registrar o meu dia</div>
+    </button>
 
-  </head>
-  <body>
-    <header> 
-<img src="./assets/logo.svg" 
-alt="logomarca do aplicativo Habits"/ >
+    <button id="zerar-button">
+      <img src="./assets/Refresh.svg" alt="icone Plus">
+      <div>Reiniciar</div>
+    </button>
+  </header>
 
-  <button>
-    <img src="./assets/Plus.svg" alt="icone Plus">
-    <div>Registrar o meu dia</div>
-  </button>
+  <div class="results">
+    <!-- Elementos que exibem os resultados -->
+  </div>
 
-  <button id="zerar-button" class="reset-button">Zerar Resultados</button>
-
-<div class="results">
-  <!-- Elementos que exibem os resultados -->
-</div>
-
-
-</header>
-
-<form id="form-habits">
-  <div class="habits">
-    <div class="habit" data-name="workOut">🏋️‍♀️</div>
-    <div class="habit" data-name="dog">🐕</div>
-    <div class="habit" data-name="water">💧</div>
-    <div class="habit" data-name="food">🍎</div>
-    <div class="habit" data-name="plant">🪴</div>
-    <div class="habit" data-name="paintNail">💅</div>
-    <div class="habit" data-name="meditate">🧘</div>
-    <div class="habit" data-name="houseCleaning">🧹</div>
-    <div class="habit" data-name="washClothes">👚</div>
-    <div class="habit" data-name="study">📖</div>
-    <div class="habit" data-name="journal">📰</div>
-    <div class="habit" data-name="takePills">💊</div>
-    <div class="habit" data-name="pray">🙏</div>
-
+  <form id="form-habits">
+    <div class="habits">
+      <div class="habit" data-name="workOut">🏋️‍♀️</div>
+      <div class="habit" data-name="dog">🐕</div>
+      <div class="habit" data-name="water">💧</div>
+      <div class="habit" data-name="food">🍎</div>
+      <div class="habit" data-name="plant">🪴</div>
+      <div class="habit" data-name="paintNail">💅</div>
+      <div class="habit" data-name="meditate">🧘</div>
+      <div class="habit" data-name="houseCleaning">🧹</div>
+      <div class="habit" data-name="washClothes">👚</div>
+      <div class="habit" data-name="study">📖</div>
+      <div class="habit" data-name="journal">📰</div>
+      <div class="habit" data-name="takePills">💊</div>
+      <div class="habit" data-name="pray">🙏</div>
     </div>
 
     <div class="days"></div>
+  </form>
 
-</form>
-<script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
-<script src="./script.js"></script>
-
-  </body>
+  <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+  <script src="./script.js"></script>
+</body>
 </html>

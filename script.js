@@ -6,8 +6,7 @@ button.addEventListener("click", add);
 form.addEventListener("change", save);
 
 function add() {
-  const today = new Date().toLocaleDateString("pt-br").slice('0,-5');
-  // const today = "10/01";
+  const today = new Date().toLocaleDateString("pt-br").slice(0, -5);
   const dayExists = nlwSetup.dayExists(today);
 
   if (dayExists) {
@@ -29,7 +28,7 @@ nlwSetup.load();
 
 // Verificar se os dados foram zerados
 if (Object.keys(data).length === 0) {
-  alert("Resultados zerados");
+  alert("Reiniciado com sucesso");
   // Ou realizar alguma ação específica para quando os dados são zerados
 }
 
@@ -40,7 +39,7 @@ function zerarResultados() {
 }
 
 // Selecione o botão de "Zerar"
-const zerarButton = document.querySelector("#zerar-button");
+const reiniciarButton = document.querySelector("#zerar-button");
 
 // Adicione um evento de clique ao botão de "Zerar"
-zerarButton.addEventListener("click", zerarResultados);
+reiniciarButton.addEventListener("click", zerarResultados);
