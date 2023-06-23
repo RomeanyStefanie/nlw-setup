@@ -17,7 +17,7 @@ header {
   justify-content: start;
   gap: 12px;
 
-  padding: 38px;
+  padding: 48px;
 
   position: fixed;
   width: 100%;
@@ -50,7 +50,7 @@ button:hover {
 #form-habits {
   display: flex;
   
-  padding: 182px 48px 48px;
+  padding: 310px 48px 48px;
   width: fit-content;
   
 }
